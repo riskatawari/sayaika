@@ -1,0 +1,35 @@
+{% extends "base.html"%}
+
+{% block konten%}
+
+<h3>Detail Pendataan</h3>
+<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Well done!</h4>
+
+
+</div>
+
+<div class="alert alert-warning" role="alert">
+    <h4 class="alert-heading">Data Detail Pendataan</h4>
+
+
+    <table class="table table-hover">
+        <tr>
+            <td>Subjek</td>
+            <td>{{dt_pendataan.subjek}}</td>
+        </tr>
+        <tr>
+            <td>Frekuensi</td>
+            <td>{{dt_pendataan.frekuensi}}</td>
+        </tr>
+        <tr>
+            <td>Detail :</td>
+            <td>{{dt_pendataan.detail}}</td>
+        </tr>
+
+    </table>
+</div>
+
+<a class="btn btn-warning" href="{{url_for('rmahasiswa.pendataanto')}}">Kembali</a>
+
+{% endblock%}
